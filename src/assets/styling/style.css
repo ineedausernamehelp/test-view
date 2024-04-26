@@ -1,0 +1,26 @@
+html, body{
+    height: 100%;
+  margin: 0;
+}
+#root{
+    height: 100%;
+
+}
+
+.table-styling{
+    width: 300px;
+    border: solid white 1px;
+}
+span{
+    border: inline white 1px;
+}
+.json-row{
+    display:  flex;
+    flex-direction: row;
+    width: inherit;
+}
+.json-row .json-item{
+    border: solid white 1px;
+    width: 50%;
+
+}
