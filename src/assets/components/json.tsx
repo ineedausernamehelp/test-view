@@ -28,6 +28,7 @@ function JSONViewer() {
 
 //   const [content, setContent] = useState<React.ReactNode[] | undefined>();
   const contentToPrint = useRef(null);
+  
   const handlePrint = useReactToPrint({
     onBeforePrint: () => console.log("before printing..."),
     onAfterPrint: () => console.log("after printing..."),
@@ -44,14 +45,23 @@ function JSONViewer() {
 //     ));
 //     setContent(newContent);
 // };
-
+const handleEmptyData = () =>{
+  if(jsonData[0] != null){
+    handlePrint(null, () => contentToPrint.current);
+  }
+  else{
+    return
+  }
+}
 
 
   return (
     <>
+    <div>
         <button onClick={() => {
         handlePrint(null, () => contentToPrint.current);
       }}>Print using a Functional Component</button>
+    </div>
 
        <input type="text" onChange={handleSearch} />
       <table className="label" ref={contentToPrint}>

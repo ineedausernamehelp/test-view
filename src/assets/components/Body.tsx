@@ -11,8 +11,9 @@ function dashboard() {
         <div className='dashboard'>
             hallo world
             <View/>
-            <JSONViewer/>
-
+                <div className='support-container'>
+                    <JSONViewer/>           
+                </div>
         </div>
     );
 }

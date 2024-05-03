@@ -16,9 +16,9 @@ function viewChoice() {
         hallo world
             <button onClick={handleSmallLabel}>small label</button>
             <button onClick={handleBigLabel}>big label</button>
-            <div className='support-container'>
+            {/* <div className='support-container'>
                 <JSONViewer labelView={choice} />
-           </div>
+           </div> */}
         </>
 
     );
