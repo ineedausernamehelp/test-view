@@ -1,26 +1,53 @@
 html, body{
     height: 100%;
   margin: 0;
+  background-color: white;
+  color: black;
 }
 #root{
     height: 100%;
+    width: 100%;
+    background-color: white;
+
+
+}
+.dashboard{
+  height: 100%;
+}
+@media print{
+  @page{
+    margin: 5mm;
+  }
+  #header,
+  #footer,
+  #nav {
+    display: none;
+  }
+  .label{
+    height: 100%;
+    width: 100%;
+  }
+  
 
 }
 
-.table-styling{
-    width: 300px;
-    border: solid white 1px;
+.support-container{ 
+  display: none;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
 }
-span{
-    border: inline white 1px;
+.label{
+  height: fit-content;
 }
-.json-row{
-    display:  flex;
-    flex-direction: row;
-    width: inherit;
+.support-container .label{
+  width: 50%;
 }
-.json-row .json-item{
-    border: solid white 1px;
+.label td{
+    display: flex;
+}
+.label span{
     width: 50%;
-
+    justify-content: space-around;
+    border: 1px solid black;
 }

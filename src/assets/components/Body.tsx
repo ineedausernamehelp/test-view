@@ -1,6 +1,7 @@
 
 import '../styling/style.css';
 import JSONViewer from './json';
+import View from './button';
 //https://i.pinimg.com/564x/c6/85/5f/c6855f0ddeeaeb93687a6c10d6b2cfb1.jpg
 function dashboard() {
     
@@ -8,7 +9,9 @@ function dashboard() {
     return(
         
         <div className='dashboard'>
-           <JSONViewer/>
+            hallo world
+            <View/>
+            <JSONViewer/>
 
         </div>
     );
